@@ -1,0 +1,163 @@
+import { Dimensions, Platform, StyleSheet } from "react-native";
+import colors from "../../components/common/colors"
+import color from "../../components/common/colors";
+const {width, height} = Dimensions.get('screen')
+
+const styles = (height,width,portrait) => StyleSheet.create({
+    button2:{
+        marginTop:15,
+        paddingTop: 10,
+        paddingRight: 15,
+        paddingBottom: 10,
+        paddingLeft: 15,
+        backgroundColor:'#FFFFFF',
+        borderRadius:10,
+        width:360,
+        height:40,
+        borderWidth:2,
+        borderColor:'#5538FE'
+    },
+    button2Text:{
+        textAlign:'center',
+        fontWeight:'600',
+        color:color.black
+    },
+    scrollViewContainer: {
+        backgroundColor:color.white, 
+        paddingTop: Platform.OS ==='ios'? 50 : 10,
+        flex:1,
+    },
+    container:{
+        backgroundColor:color.white, 
+        flex:1
+    },
+    userDetailsContainer:{
+        flexDirection:'row', 
+        justifyContent:'space-between', 
+        marginHorizontal:15,
+    },
+    userNameView:{
+        flexDirection:'row', 
+        alignItems:'center'
+    },
+    userNameText:{
+        color:color.black, 
+        fontSize:16, 
+        marginLeft:10
+    },
+    flexRow:{
+        flexDirection:'row'
+    },
+    margin:{
+        margin:10
+    },
+    notificationView:{
+        backgroundColor:color.red, 
+        width:20, 
+        height:20, 
+        borderRadius:20/2, 
+        position:'absolute', 
+        right:-10, 
+        top:-8, 
+        justifyContent:'center'
+    },
+    notificationText:{
+        textAlign:'center', 
+        fontWeight:'600',
+        color:color.white
+    },
+    leftContainerView:{
+        flexDirection:'row', 
+        margin:15, 
+        justifyContent:'space-between'
+    },
+    userImage:{
+        height:110, 
+        width:110, 
+        borderRadius:110/2
+    },
+    nameView:{
+        marginTop:15, 
+        margin:5
+    },
+    nameStyle:{
+        fontSize:18, 
+        fontWeight:'600', 
+        color:color.black
+    },
+    locationTextContainer:{
+        flexDirection:'row', 
+        alignItems:'center'
+    },
+    locationTextstyle:{
+        fontWeight:'300',  
+        fontSize:14, 
+        color:color.black
+    },
+    isActiveContainer:{
+        flexDirection:'row', 
+        alignItems:'center'
+    },
+    isActiveCircle:{
+        width:12, 
+        height:12, 
+        borderRadius:12/2, 
+        backgroundColor:color.ligtGrey, 
+        margin:5
+    },
+    activeTextStyle:{
+        fontWeight:'300',  
+        fontSize:14, 
+        color:color.black
+    },
+    letfComponents:{
+        alignItems:'flex-end', 
+        marginVertical:6.5
+    },
+    text1:{
+        fontWeight:'600', 
+        padding:2,  
+        fontSize:18, 
+        color:color.black
+    },
+    text2:{
+        fontWeight:'300', 
+        fontSize:16, 
+        color:color.black
+    },
+    frendsView:{
+        flexDirection:'row', 
+        marginEnd:-15
+    },
+    frendsProfilePhoto1:{
+        height:35, 
+        width:35, 
+        borderRadius:35/2, 
+        borderWidth:2, 
+        borderColor:color.white,
+        left:10
+    },
+    frendsProfilePhoto2:{
+        height:35, 
+        width:35, 
+        borderRadius:35/2, 
+        borderWidth:2, 
+        borderColor:color.white
+    },
+    frendsProfilePhoto3:{
+        height:35,
+        width:35, 
+        borderRadius:35/2, 
+        borderWidth:2, 
+        borderColor:color.white, 
+        right:10
+    },
+    topFriendText:{
+        textAlign:'right', 
+        fontSize:16, 
+        color:color.black
+    },
+    editProfileButtonView:{alignItems:'center', marginBottom:15}
+})
+
+export default styles
